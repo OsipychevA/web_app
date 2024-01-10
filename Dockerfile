@@ -4,7 +4,7 @@ RUN mkdir /web_app
 
 COPY requirements.txt /web_app/
 
-COPY main.py /web_app/
+COPY app.py /web_app/
 
 RUN python -m pip install -r /web_app/requirements.txt
 
