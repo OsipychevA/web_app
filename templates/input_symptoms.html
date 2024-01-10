@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ввод симптомов</title>
+</head>
+<body>
+    <h2>Введите все симптомы через запятую:</h2>
+    <form action="{{ url_for('input_symptoms', id_=id_) }}" method="post">
+        <textarea name="symptoms" rows="4" cols="50" required></textarea>
+        <br>
+        <input type="submit" value="Добавить">
+    </form>
+</body>
+</html>
